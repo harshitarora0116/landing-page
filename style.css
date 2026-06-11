@@ -9,6 +9,9 @@
     font-family:'Montserrat', sans-serif;
 }
 
+/* 
+HEADER
+ */
 .header{
     background:#0d1117;
     display:flex;
@@ -37,7 +40,7 @@
     color:white;
 }
 
-#pranay{
+#prana{
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -64,4 +67,74 @@
 .links >*:hover{
     background-color: #4F5B70;
     cursor: pointer;
+}
+
+
+/* #HERO */
+.hero{
+    background-color:#0d1117;
+    padding:100px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.hero .drone{
+    max-height: 300px;
+    padding: 10px 5px;
+    animation: popIn 0.8s ease forwards;
+}
+
+@keyframes popIn{
+    from {
+        opacity: 0;
+        filter:blur(10px);
+        transform: scale(0.95);
+    }
+    to{
+        opacity: 1;
+        filter:blur(0px);
+        transform:scale(1);
+    }
+}
+
+.hero .header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px 10px 20px;
+    justify-content:flex-start;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.hero .header >*{
+    max-width: 500px;
+}
+.hero .heading{
+    font-weight: 700;
+    font-size: 3rem;
+    color:white;
+}
+.hero .subheading{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.hero .heading, .hero .subheading, .header .signup{
+    animation: popIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.header .signup{
+    width: fit-content;
+    border-radius: 40px;
+    color:white;
+    padding:20px;
+    background-color: #4F5B70;
+    margin-top: 10px;
+}
+
+.header .signup:hover{
+    background-color:gray;
+    cursor:pointer;
 }
