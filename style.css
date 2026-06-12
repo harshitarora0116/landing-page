@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     border:2px solid red;
-    /* border:None; */
+    border:None;
     font-family:'Montserrat', sans-serif;
 }
 
@@ -21,6 +21,7 @@ HEADER
 }
 
 .logo{
+    animation: popIn 0.8s ease forwards;
     display: flex;
     gap:30px;
 }
@@ -57,6 +58,7 @@ HEADER
 }
 
 .links > *{
+    animation: popIn 0.8s ease forwards;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,6 +163,7 @@ HEADER
     flex-direction: column;
 }
 .features .features_header{
+    animation: popIn 0.8s ease forwards;
     font-weight:900;
     font-size:2rem;
     display: flex;
@@ -176,15 +179,18 @@ HEADER
 }
 
 .cards img{
+    animation: popIn 0.8s ease forwards;
+    transition: transform 0.3s ease !important;
     max-width: 200px;
     border-radius: 20px;
 }
 .cards >*:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+    transform: scale(1.1) !important;
 }
 
 .cards >*{
+    animation: popIn 0.8s ease forwards;
+    transition: transform 0.3s ease;
     color:white;
     display: flex;
     flex-direction: column;
@@ -203,12 +209,74 @@ HEADER
 
 .quote .text{
     font-size: 3rem;
+        animation: popIn 0.8s ease forwards;
     color:white
 }
 
 .quote .author{
+        animation: popIn 0.8s ease forwards;
     color:white;
     font-size: 1.5rem;
     font-weight:600;
     width: fit-content;
+}
+/* 
+CALL TO ACTION */
+
+.cta{
+    background-color:#30303e;
+    padding: 100px 200px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.cta_box{
+    background-color: #0d1117;
+    display: flex;
+    justify-content: space-between;
+    padding:80px 50px;
+    gap:100px;
+    border-radius:10px;
+}
+.cta_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+}
+
+.cta .cta_text1{
+        animation: popIn 0.8s ease forwards;
+    color:white;
+    font-weight:700;
+    font-size : 1.4rem;
+}
+
+.cta .cta_text2{
+        animation: popIn 0.8s ease forwards;
+    color:white;
+    font-weight:450;
+    font-size:1.3rem;
+}
+
+.cta .cta_signup{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    padding:5px 10px 5px;
+    max-height:50px;
+    margin-top:15px;
+    font-weight: 600;
+    background-color: #4F5B70;
+    animation: popIn 0.8s ease forwards;
+    /* hover color: #527fcc*/;
+}
+
+.cta_signup:hover{
+    background-color: #527fcc;
+}
+
+.underline:hover{
+    text-decoration: underline !important;
 }
