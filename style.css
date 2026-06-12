@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     border:2px solid red;
-    border:None;
+    /* border:None; */
     font-family:'Montserrat', sans-serif;
 }
 
@@ -148,4 +148,67 @@ HEADER
     transform: scale(1.1) !important;
     opacity: 0.9 !important;
     transition: background-color 0.3s ease !important;
+}
+
+
+/* CARDS SECTION */
+
+.features{
+    padding: 60px 150px;
+    background-color: #30303e;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+}
+.features .features_header{
+    font-weight:900;
+    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke:2px solid black;
+    color:white
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.cards img{
+    max-width: 200px;
+    border-radius: 20px;
+}
+.cards >*:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.cards >*{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    font-size:1.2rem;
+    gap:10px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(95, 93, 106);
+    padding:80px 200px;
+    gap:10px;
+}
+
+.quote .text{
+    font-size: 3rem;
+    color:white
+}
+
+.quote .author{
+    color:white;
+    font-size: 1.5rem;
+    font-weight:600;
+    width: fit-content;
 }
