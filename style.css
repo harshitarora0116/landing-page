@@ -98,7 +98,7 @@ HEADER
     }
 }
 
-.hero .header{
+.hero .hero_header{
     display: flex;
     flex-direction: column;
     padding: 10px 100px 10px 20px;
@@ -107,7 +107,7 @@ HEADER
     max-width: 600px;
 }
 
-.hero .header >*{
+.hero .hero_header >*{
     max-width: 500px;
 }
 .hero .heading{
@@ -120,12 +120,12 @@ HEADER
     color: white;
 }
 
-.hero .heading, .hero .subheading, .header .signup{
+.hero .heading, .hero .subheading, .hero_header .signup{
     animation: popIn 0.5s ease forwards;
     opacity: 0;
 }
 
-.header .signup{
+.hero_header .signup{
     width: fit-content;
     border-radius: 40px;
     color:white;
@@ -134,7 +134,18 @@ HEADER
     margin-top: 10px;
 }
 
-.header .signup:hover{
-    background-color:gray;
+.hero_header .signup:hover{
+    background-color:#527fcc;
     cursor:pointer;
+}
+
+@keyframes popOut{
+    from{opacity: 1;}
+    to{opacity: 0.8; transform:scale(1.1)}
+}
+
+.button:hover{
+    transform: scale(1.1) !important;
+    opacity: 0.9 !important;
+    transition: background-color 0.3s ease !important;
 }
