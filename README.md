@@ -6,6 +6,8 @@ A dummy landing page for a fictional drone delivery drone company as a part of t
 -HTML
 -CSS
 
+⚠️ Please view on laptop/desktop only. if you're on mobile, enable "Desktop site" in your browser or it will break. I haven't learnt responsive design yet
+
 #Live demo: 
 https://harshitarora0116.github.io/landing-page/
 
