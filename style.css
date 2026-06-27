@@ -184,13 +184,12 @@ HEADER
     max-width: 200px;
     border-radius: 20px;
 }
-.cards:hover{
+.cards >*:hover{
     transform: scale(1.1) !important;
 }
 
 .cards >*{
-    animation: popIn 0.8s ease forwards;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
     color:white;
     display: flex;
     flex-direction: column;
@@ -269,7 +268,6 @@ CALL TO ACTION */
     margin-top:15px;
     font-weight: 600;
     background-color: #4F5B70;
-    animation: popIn 0.8s ease forwards;
     /* hover color: #527fcc*/;
 }
 
