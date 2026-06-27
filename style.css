@@ -149,7 +149,7 @@ HEADER
 .button:hover{
     transform: scale(1.1) !important;
     opacity: 0.9 !important;
-    transition: background-color 0.3s ease !important;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -180,11 +180,11 @@ HEADER
 
 .cards img{
     animation: popIn 0.8s ease forwards;
-    transition: transform 0.3s ease !important;
+    transition: transform 0.3s ease;
     max-width: 200px;
     border-radius: 20px;
 }
-.cards >*:hover{
+.cards:hover{
     transform: scale(1.1) !important;
 }
 
